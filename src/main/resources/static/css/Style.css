@@ -1,0 +1,59 @@
+
+/* 
+    Created on : 1 jun 2023, 21:08:00
+    Author     : Ying
+*/
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: lightblue;
+    font-family: sans-serif;
+    padding: 80px 0px 20px 0px;
+
+}
+
+
+.header{
+
+    background-color: lightgreen;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.aside{
+    background-color: lightcyan;
+    position: fixed;
+    top: 80px;
+    width: 20%;
+    bottom: 20px;
+
+}
+
+.contenido{
+    background-color: lightgray;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 80%;
+    bottom: 20px;
+    overflow-y: scroll;
+    padding: 20px;
+}
+footer{
+    background-color: lightsalmon;
+    height: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+nav a{
+    color: lavenderblush;
+    
+}
