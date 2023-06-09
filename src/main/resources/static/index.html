@@ -7,8 +7,8 @@
         <title>Tienda en Linea</title>
         <meta charset="UTF-8"> <!-- idioma -->
         <link href="css/Style.css" rel="stylesheet" type="text/css"/>
-        
-        
+
+
         <!--         <style>
             
             h1 {
@@ -25,15 +25,23 @@
     <body>
 
         <header class="header">
-            <h1>GoOnline</h1>
-            <!-- <h1 style="color: lightcoral; text-align: center">GoOnline</h1> -->
-            <nav>
+            <nav class ="nav">
+                <a href="index.html" class="logo nav_link">GoOnline</a>
 
-                <div>
-                    <a href="ejemplo5.html">atras</a>
-                    <a href="index.html">home</a>
-                    <a href="ejemplo1.html">siguiente</a>
-                </div>   
+
+
+                <ul> 
+                    <li><a class="nav_menu_item" class ="nav_link" href="ejemplo5.html">&LeftTriangleBar;atras</a></li>
+                    <li><a  class="nav_menu_item" class="nav_link" href="ejemplo1.html">&RightTriangleBar;siguiente</a></li>
+                    <li><a  class="nav_menu_item" class="nav_link" href="audio.html">Audio</a> </li>
+                    <li><a  class="nav_menu_item" class="nav_link" href="video.html">Video</a> </li>
+                    <li><a  class="nav_menu_item" class="nav_link" href="iframe.html">Iframe</a> </li>
+                    <li><a  class="nav_menu_item" class="nav_link" href="formulario.html">Formulario</a> </li>
+                </ul>
+
+
+
+
 
 
             </nav>
@@ -50,8 +58,56 @@
 
         </aside>
 
+
+
         <section class="contenido">
+            <h2>Productos</h2>
             <article>
+
+                <article>
+                    <header>
+                        <h3>Lista de Clientes</h3>
+                    </header> 
+                    <section class="texto_centrado">
+                        <table >
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nombre</th>
+                                    <th>Edad</th>
+                                    <th>Credito</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Jose Rojas</td>
+                                    <td>25</td>
+                                    <td>¢355.000</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Mario Aguilar</td>
+                                    <td>29</td>
+                                    <td>¢200.000</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Roberto Arias</td>
+                                    <td>30</td>
+                                    <td>¢265.000</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Ana Rojas</td>
+                                    <td>22</td>
+                                    <td>¢400.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                </article>
+
                 <header>
                     <h3>Apple AirPods Pro</h3>
                 </header>   
@@ -59,7 +115,7 @@
                 <h4>Descripcion</h4>
                 <p>textLos Apple AirPods Pro son auriculares inalámbricos con cancelación de ruido activa. Ofrecen una calidad de sonido excepcional y un ajuste cómodo con sus puntas de silicona intercambiables. Cuentan con resistencia al agua y control táctil para administrar la reproducción de música y llamadas. Además, incluyen estuche de carga inalámbrica.</p>
                 <footer>
-                    <br><!-- salto linea -->
+
                     Precio: $249 <a href="#">Comprar</a> <hr/>
 
                 </footer>
@@ -73,11 +129,13 @@
                 <h4>Descripcion</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare fermentum erat et porta. Proin ullamcorper maximus pharetra. Quisque egestas pretium consequat. Suspendisse potenti. Ut eu fringilla velit. Vivamus ex dolor, lacinia vel consequat non, gravida maximus massa. Donec nec pharetra ipsum, in rhoncus turpis. Nullam ullamcorper felis ut feugiat iaculis. Quisque tristique est vehicula turpis tristique venenatis.</p>
                 <footer>
-                    <br><!-- salto linea -->
+
                     Precio: $429 <a href="#">Comprar</a> <hr/>
 
                 </footer>
             </article>
+
+
 
 
             <article>
@@ -103,7 +161,7 @@
                 <h4>Descripcion</h4>
                 <p>El Mini 2 transmite vídeo HD con un alcance de hasta 10 km. Además, es muy resistente a las interferencias, para que puedas volar más lejos y ver mejor.</p>
                 <footer>
-                    <br><!-- salto linea -->
+
                     Precio: $299 <a href="#">Comprar</a> <hr/>
 
                 </footer>

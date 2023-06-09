@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- Ying Peng Chen Gaitan -->
+<html>
+    <!-- head configuracion -->
+    <head>
+        <title>Tienda en Linea</title>
+        <meta charset="UTF-8"> <!-- idioma -->
+    </head>
+    <body>
+        <section class="contenido">
+            <h2>Formulario</h2>
+            <article>
+
+                <article>
+                    <header>
+                        <h3>Registro de clientes</h3>
+                    </header> 
+
+                    <form action="Cliente/registro" method="post">
+
+                        <fieldset>
+                            <legend>datos del cliente</legend>
+
+                            <label for="name" > Nombre:</label>
+                            <input type="text" name="nombre"/>
+
+
+                            <br>
+                            <br><!-- comment -->
+
+                            <label for="Clave" > Clave</label>
+                            <input type="password" name="clave" id="clave"/>
+
+
+                            <br>
+                            <br><!-- comment -->
+
+                            <label for="Direccion">Direccion: </label>
+                            <br>
+                            <textarea  name="direccion" rows="2" cols="20" id="direccion"></textarea>
+
+                            <br>
+                            <br><!-- comment -->
+                            <label for="edad">Edad</label>
+                            <input type="number" name="Edad" id="edad" max="120" min="18" />
+                            <br>
+                            <br>
+
+                            <label for="correo">Correo</label>
+                            <input type="email" name="correo" id="correo" />
+                            <br>
+                            <br>
+                            
+                            <input type="submit" value="Guardar">
+                        </fieldset>
+
+
+                    </form>
+
+                </article>
+
+
+                </body>
+                </html>
