@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      >
+    <head th:fragment="head">
+        <meta charset="UTF-8"/>
+        <title>WomensDivineCR</title>
+        <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+        <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}"/>
+        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+        <script th:src="@{/js/rutinas.js}"></script>
+        <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'/>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'/>
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+        <style>
+            .sidebar-container {
+                position: fixed;
+                width: 220px;
+                height: 100%;
+                left: 0;
+                overflow-x: hidden;
+                overflow-y: auto;
+                background: #eb8d86;
+                color: white;
+            }
+            .content-container {
+                padding-top: 20px;
+                color: white;
+                background: #eb8d86;
+            }
+            .sidebar-logo {
+                padding: 10px 15px 10px 30px;
+                font-size: 20px;
+                background-color: #eb8d86;
+            }
+            .sidebar-navigation {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                position: relative;
+            }
+            .sidebar-navigation li {
+                background-color: transparent;
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                line-height: 20px;
+            }
+            .sidebar-navigation li a {
+                padding: 10px 15px 10px 30px;
+                display: block;
+                color: white;
+            }
+            .sidebar-navigation li .fa {
+                margin-right: 10px;
+            }
+            .sidebar-navigation li a:active,
+            .sidebar-navigation li a:hover,
+            .sidebar-navigation li a:focus {
+                text-decoration: none;
+                outline: none;
+            }
+            .sidebar-navigation li::before {
+                background-color: #eb8d86;
+                position: absolute;
+                content: '';
+                height: 100%;
+                left: 0;
+                top: 0;
+                -webkit-transition: width 0.2s ease-in;
+                transition: width 0.2s ease-in;
+                width: 3px;
+                z-index: -1;
+            }
+            .sidebar-navigation li:hover::before {
+                width: 100%;
+            }
+            .sidebar-navigation .header {
+                font-size: 12px;
+                text-transform: uppercase;
+                background-color: #151515;
+                padding: 10px 15px 10px 30px;
+            }
+            .sidebar-navigation .header::before {
+                background-color: transparent;
+            }
+            .content-container {
+                padding-left: 220px;
+                background: #eb8d86;
+                background-color: #eb8d86;
+            }
+
+            .col{
+                background-color: #eb8d86;
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header th:fragment="headerMenu" class="header">
+            <div class="sidebar-container">
+
+                <div class="sidebar-logo">
+                    <a th:href="@{/}" class="navbar-brand">WomensDivineCR</a>
+
+                </div>
+                <button class="navbar-toggler"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" 
+                     id="navbarCollapse">
+                    <ul class="sidebar-navigation">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-users" aria-hidden="true"></i> Perfil Usuario
+                            </a>
+                        </li>
+                        <li><a class="nav-link" th:href="@{/categoria/listado}"><i class="fa fa-home" aria-hidden="true"></i> Productos</a></li>
+                        <ul class="sub-navigation"> <!-- Dropdown list for "Productos" -->
+                            <li>
+                                <a class="nav-link" th:href="@{/productos/listado}">
+                                    <i class="fa fa-star" aria-hidden="true"></i> [[#{plantilla.ojos}]]
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@{/productos/listado}">
+                                    <i class="fa fa-star" aria-hidden="true"></i> [[#{plantilla.labios}]]
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@{/productos/listado}">
+                                    <i class="fa fa-star" aria-hidden="true"></i> [[#{plantilla.corporales}]]
+                                </a>
+                            </li>
+                        </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-circle-o-notch" aria-hidden="true"></i> Blog Belleza
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-cog" aria-hidden="true"></i> Quienes Somos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-info-circle" aria-hidden="true"></i> Information
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section th:fragment="headerInfo" class="headerInfo">
+            <div class="content-container">
+                <div class="container-fluid">
+                    <!-- Main component for a primary marketing message or call to action -->
+                    <div class="jumbotron">
+                        <h1>BIENVENIDO A WOMENSDIVINECR</h1>
+                        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+                        <p>To see the difference between static and fixed top navbars, just scroll.</p>
+                        <p>
+                            <a class="btn btn-lg btn-primary" href="#" role="button">View navbar docs &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+
+                            <p><div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="images/descarga.jfif" class="d-block w-70" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <center><img src="images/bolso.jfif" class="d-block w-70" alt="..."></center>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <center><img src="images/serum.jpg" class="d-block w-25" alt="..."></center>
+                                        </div>
+                                    </div>
+                                </div></p>
+                            </section>
+
+                            <footer th:fragment="footer" class="bg-info text-white mt-5 p-2">
+                                <footer style="background: #eb8d86">
+                                    <div class="container" >
+                                        <div class="col" >
+                                            <p class="lead text-center">
+                                                &COPY; WomensDivineCR Derechos Reservados 2023
+                                            </p>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </footer>
+                            </body>
+                            </html>
