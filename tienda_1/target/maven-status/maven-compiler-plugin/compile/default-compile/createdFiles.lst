@@ -1,1 +1,14 @@
+tienda\Tienda\service\Impl\ProductoServiceImpl.class
 tienda\Tienda\TiendaApplication.class
+tienda\Tienda\domain\Producto.class
+tienda\Tienda\dao\ProductoDao.class
+tienda\Tienda\dao\CategoriaDao.class
+tienda\Tienda\controller\ProductoController.class
+tienda\Tienda\service\FirebaseStorageService.class
+tienda\Tienda\service\ProductoService.class
+tienda\Tienda\service\CategoriaService.class
+tienda\Tienda\service\Impl\CategoriaServiceImpl.class
+tienda\Tienda\service\Impl\FirebaseStorageServiceImpl.class
+tienda\Tienda\controller\CategoriaController.class
+tienda\Tienda\domain\Categoria.class
+tienda\Tienda\ProjectConfig.class
