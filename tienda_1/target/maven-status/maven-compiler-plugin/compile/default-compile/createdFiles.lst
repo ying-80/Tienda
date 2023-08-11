@@ -5,6 +5,7 @@ tienda\Tienda\dao\ProductoDao.class
 tienda\Tienda\dao\CategoriaDao.class
 tienda\Tienda\controller\ProductoController.class
 tienda\Tienda\service\FirebaseStorageService.class
+tienda\Tienda\controller\PruebasController.class
 tienda\Tienda\service\ProductoService.class
 tienda\Tienda\service\CategoriaService.class
 tienda\Tienda\service\Impl\CategoriaServiceImpl.class
