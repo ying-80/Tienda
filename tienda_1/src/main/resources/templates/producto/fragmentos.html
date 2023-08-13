@@ -10,7 +10,7 @@
         <section th:fragment="botonesAgregar" class="py-4 mb-4 bg-light">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">   
+                    <div class="col-md-3" sec:authorize="hasRole('ROLE_ADMIN')">   
                         <button 
                             type="button" 
                             class="btn btn-primary btn-block" 
@@ -123,7 +123,7 @@
                                             <td class="text-end">¢[[${#numbers.formatDecimal(producto.precio*producto.existencias, 1, 'DEFAULT', 2, 'DEFAULT')}]]</td>​
                                             <td class="text-center" th:text="${producto.activo} ? 'Activa' : 'Inactiva'"/>​
                                             <td class="text-center">[[${producto.categoria.descripcion}]]</td>
-                                            <td><a th:href="@{/producto/eliminar/}+${producto.idProducto}"
+                                            <td sec:authorize="hasRole('ROLE_ADMIN')"><a th:href="@{/producto/eliminar/}+${producto.idProducto}"
                                                    class="btn btn-danger">
                                                     <i class="fas fa-trash"></i> [[#{accion.eliminar}]]</a>
                                                 <a th:href="@{/producto/modificar/}+${producto.idProducto}"
@@ -179,6 +179,14 @@
                                                            name="descripcion" th:field="*{descripcion}"
                                                            required="true">
                                                 </div>
+
+                                                <div class="mb-3">
+                                                    <label for="id">[[#{producto.categoria}]]</label>
+                                                    <input type="text" class="form-control" 
+                                                           name="id" th:field="*{idProducto}"
+                                                           required="true">
+                                                </div>
+
                                                 <div class="mb-3">
                                                     <label for="activo">[[#{producto.activo}]]</label>
                                                     <input class="form-check-input" 
