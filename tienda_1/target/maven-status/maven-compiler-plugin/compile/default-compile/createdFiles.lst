@@ -1,6 +1,10 @@
+tienda\Tienda\service\Impl\ReportesServiceImpl.class
+tienda\Tienda\service\RegistroService.class
 tienda\Tienda\service\Impl\UsuarioDetailsServiceImpl.class
 tienda\Tienda\TiendaApplication.class
+tienda\Tienda\service\Impl\CorreoServiceImpl.class
 tienda\Tienda\domain\Producto.class
+tienda\Tienda\controller\RegistroController.class
 tienda\Tienda\controller\UsuarioController.class
 tienda\Tienda\dao\CategoriaDao.class
 tienda\Tienda\controller\ProductoController.class
@@ -8,10 +12,13 @@ tienda\Tienda\service\FirebaseStorageService.class
 tienda\Tienda\controller\PruebasController.class
 tienda\Tienda\dao\RolDao.class
 tienda\Tienda\service\ProductoService.class
+tienda\Tienda\service\ReportesService.class
 tienda\Tienda\service\CategoriaService.class
 tienda\Tienda\service\UsuarioService.class
+tienda\Tienda\service\CorreoService.class
 tienda\Tienda\domain\Categoria.class
 tienda\Tienda\ProjectConfig.class
+tienda\Tienda\controller\ReportesController.class
 tienda\Tienda\service\Impl\ProductoServiceImpl.class
 tienda\Tienda\domain\Usuario.class
 tienda\Tienda\dao\ProductoDao.class
@@ -21,4 +28,5 @@ tienda\Tienda\dao\UsuarioDao.class
 tienda\Tienda\service\Impl\CategoriaServiceImpl.class
 tienda\Tienda\service\Impl\UsuarioServiceImpl.class
 tienda\Tienda\service\Impl\FirebaseStorageServiceImpl.class
+tienda\Tienda\service\Impl\RegistroServiceImpl.class
 tienda\Tienda\controller\CategoriaController.class
